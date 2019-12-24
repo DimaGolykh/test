@@ -1,0 +1,30 @@
+{
+  "name": "weather-service",
+  "version": "0.0.1",
+  "description": "service for a get current wheather from user area and helped about choose a washcar service.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production babel src --out-dir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "GDA",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "cross-env": "^5.2.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+
+  }
+}
