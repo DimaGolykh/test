@@ -7,7 +7,7 @@ const apiKey = getApiKey();
 const weather = (clientX, clientY, clientId) => {
     // console.log('query = ' + query);
     console.log('url = ' + weatherUrl + '/' + apiKey + '/' + clientX + ',' + clientY);
-    const res = axios.get(weatherUrl + '/' + apiKey + '/' + clientX + ',' + clientY).then(response => response.data);
+    const res = axios.get(weatherUrl + '/' + apiKey + '/' + clientX + ',' + clientY).then(response => response.data).catch(error => { console.log('caught', err.message)});
     console.log('res = ' + res);
     console.log(res);
     return res;
